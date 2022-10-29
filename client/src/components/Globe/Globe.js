@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-import ReactGlobe from 'react-globe';
-
-// import optional tippy styles for tooltip support
-import 'tippy.js/dist/tippy.css';
-import 'tippy.js/animations/scale.css';
+import ReactGlobe from 'react-globe.gl';
 
 export default function Globe() {
   // support rendering markers with simple data
