@@ -50,8 +50,8 @@ export default function World() {
       <Globe
         // Globe
         ref={globeEl}
-        globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"//change 
-        bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+        globeImageUrl="image1.jpeg"//change 
+        // bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
         backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         // pathsData={ gData }
         width={w + shiftAmount}
