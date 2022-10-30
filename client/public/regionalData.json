@@ -2,6 +2,8 @@
     {
         "index": 1,
         "region": "Texas",
+        "totalProd":"1.78 billion barrels annually",
+        "sharePercent":"50%",
         "numListWell": 3,
         "listWell": [
             {
@@ -36,6 +38,8 @@
     {
         "index": 2,
         "region": "Federal Offshore – Gulf of Mexico",
+        "totalProd":"623 million barrels annually",
+        "sharePercent":"17.5%",
         "numListWell": 3,
         "listWell": [
             {
@@ -70,6 +74,8 @@
     {
         "index": 3,
         "region": "West Coast",
+        "totalProd":"142 million barrels annually",
+        "sharePercent":"4.5%",
         "numListWell": 3,
         "listWell": [
             {
@@ -104,6 +110,8 @@
     {
         "index": 4,
         "region": "Alaska",
+        "totalProd":"163.85 million barrels annually",
+        "sharePercent":"4%",
         "numListWell": 1,
         "listWell": [
             {
@@ -120,6 +128,8 @@
     {
         "index": 5,
         "region": "Midwest",
+        "totalProd":"854.4 million barrels annually",
+        "sharePercent":"24%",
         "numListWell": 2,
         "listWell": [
             {
@@ -145,6 +155,8 @@
     {
         "index": 6,
         "region": "East Coast",
+        "totalProd":"Insignificant",
+        "sharePercent":"Insignificant",
         "numListWell": 1,
         "listWell": [
             {
