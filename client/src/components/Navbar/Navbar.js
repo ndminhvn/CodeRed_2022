@@ -8,13 +8,16 @@ const NavBar = () => {
 		<Navbar>
 			<Container>
 				<Navbar.Brand>
+					<Nav.Link href={`${window.location.protocol}//${window.location.host}`}>
 					<h1 style={{
-						color:"white",
+						// color:"white",
 						fontFamily:"Times New Roman"
+						// fontFamily: '"Great Vibes", cursive'
 						}}
 					>
 						SWE Duo Team
 					</h1>
+					</Nav.Link>
 				</Navbar.Brand>
 			</Container>
 			<Navbar.Toggle />
