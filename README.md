@@ -1,8 +1,8 @@
 # CodeRed_2022 - Hackathon Project
 
 # SWE Duo Team
-- Minh Nguyen
-- Thinh Ngo
+- Minh Duc Nguyen
+- Dinh Thinh Ngo
 
 # Challenge we chose
 ## ConocoPhillips
