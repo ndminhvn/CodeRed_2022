@@ -13,6 +13,7 @@ const Search = () => {
     const [isLoading, setLoading] = useState(false);
     const [value, setValue] = useState("");
     const [resultDisplay, setResultDisplay] = useState(false);
+    const [regionData, setRegionData] = useState([]);
 
     useEffect(() => {
         if (isLoading) {
@@ -28,7 +29,25 @@ const Search = () => {
     const handleSearch = e => {
         setValue(e.target.value);
         setResultDisplay(false);
+    }
+
+    const getData = () => {
+        fetch('regionalData.json',
+            {
+                headers : {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            }
+        )
+        .then(response => response.json())
+        .then(regionData => setRegionData(regionData))
+        .catch(error => console.log(error));
     } 
+
+    useEffect(() => {
+      getData()
+    }, [])
 
     return (
         <>
@@ -40,12 +59,11 @@ const Search = () => {
                     onChange={handleSearch}
                 >
                     <option>Search by Location</option>
-                    <option value="Alaska">Alaska</option>
-                    <option value="East Coast">East Coast</option>
-                    <option value="West Coast">West Coast</option>
-                    <option value="Federal Offshore - Gulf of Mexico">Federal Offshore - Gulf of Mexico</option>
-                    <option value="Midwest">Midwest</option>
-                    <option value="Texas">Texas</option>
+                    {regionData.map((regionalData, index) => {
+                        return (
+                            <option key={index} value={regionalData.region}>{regionalData.region}</option>
+                        )
+                    })}
                 </Form.Select>
             </div>
             <div>
