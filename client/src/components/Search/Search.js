@@ -23,8 +23,9 @@ const Search = () => {
     const handleLoading = () => setLoading(true);
 
     const handleSearch = e => {
-        setResultDisplay(!resultDisplay);
-        setValue(e.target.value);
+        let searchValue = e.target.value;
+        setValue(searchValue);
+        (searchValue !== 'Search by Location') ? setResultDisplay(true) : setResultDisplay(false);
         // console.log(resultDisplay);
         // console.log(e.target.value);
     };
