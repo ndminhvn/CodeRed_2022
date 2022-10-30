@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import './Navbar.css'
 
 const NavBar = () => {
@@ -8,7 +8,13 @@ const NavBar = () => {
 		<Navbar>
 			<Container>
 				<Navbar.Brand>
-					<h1>SWEduo Team</h1>
+					<h1 style={{
+						color:"white",
+						fontFamily:"Times New Roman"
+						}}
+					>
+						SWE Duo Team
+					</h1>
 				</Navbar.Brand>
 			</Container>
 			<Navbar.Toggle />
