@@ -3,8 +3,10 @@ import { Container, Button, Form, Row, Col, Card } from 'react-bootstrap';
 
 import './Search.css';
 
+const delayInMilliseconds = 1000;
+
 const simulateNetworkRequest = () => {
-    return new Promise((resolve) => setTimeout(resolve, 1000));
+    return new Promise((resolve) => setTimeout(resolve, delayInMilliseconds));
 }
 
 const Search = () => {
@@ -14,21 +16,19 @@ const Search = () => {
 
     useEffect(() => {
         if (isLoading) {
-        simulateNetworkRequest().then(() => {
-            setLoading(false);
-        });
+            simulateNetworkRequest().then(() => {
+                setLoading(false);
+                (value !== 'Search by Location') ? setResultDisplay(true) : setResultDisplay(false);
+            });
         }
-    }, [isLoading]);
-
+    }, [isLoading,value]);
+    
     const handleLoading = () => setLoading(true);
-
+        
     const handleSearch = e => {
-        let searchValue = e.target.value;
-        setValue(searchValue);
-        (searchValue !== 'Search by Location') ? setResultDisplay(true) : setResultDisplay(false);
-        // console.log(resultDisplay);
-        // console.log(e.target.value);
-    };
+        setValue(e.target.value);
+        setResultDisplay(false);
+    } 
 
     return (
         <>
