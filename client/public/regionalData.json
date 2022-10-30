@@ -3,8 +3,9 @@
         "index": 1,
         "region": "Texas",
         "numListWell": 3,
-        "listWell": {
-            "well_1": {
+        "listWell": [
+            {
+                "id": 1,
                 "name": "Gwendolyn 2636WA & 2646MS",
                 "type": "Oil",
                 "company": "Henry Resources",
@@ -12,7 +13,8 @@
                 "field": "Permian Basin",
                 "BOE": "1,249,892 Combined/6 months"
             },
-            "well_2": {
+            {
+                "id": 2,
                 "name": "Mabee 240A 4406H",
                 "type": "Oil",
                 "company": "Concho Resources",
@@ -20,7 +22,8 @@
                 "field": "Permian Basin",
                 "BOE": "728,660/6 months"
             },
-            "well_3":{
+            {
+                "id": 3,
                 "name": "Blanc Unit 102H",
                 "type": "Oil",
                 "company": "EOG Resources",
@@ -28,14 +31,15 @@
                 "field": "Eagle Shale Ford",
                 "BOE": "610,225/6 months"
             }
-        }   
+        ]   
     },
     {
         "index": 2,
         "region": "Federal Offshore – Gulf of Mexico",
         "numListWell": 3,
-        "listWell": {
-            "well_1": {
+        "listWell": [
+            {
+                "id": 1,
                 "name": "Mad Dog Platform",
                 "type": "Oil/Gas",
                 "company": "BP, BHP & Chevron Corporation",
@@ -43,7 +47,8 @@
                 "field": "Mad Dog",
                 "BOE": "110,000"
             },
-            "well_2": {
+            {
+                "id": 2,
                 "name": "Mars Platform",
                 "type": "Oil/Gas",
                 "company": "Shell & BP",
@@ -51,7 +56,8 @@
                 "field": "Mississippi Canyon",
                 "BOE": "230,333"
             },
-            "well_3":{
+            {
+                "id": 3,
                 "name": "Petronius Platform",
                 "type": "Oil/Gas",
                 "company": "Chevron",
@@ -59,15 +65,15 @@
                 "field": "Viosca Knoll",
                 "BOE": "76,000"
             }
-        }
-        
+        ]
     },
     {
         "index": 3,
         "region": "West Coast",
         "numListWell": 3,
-        "listWell": {
-            "well_1": {
+        "listWell": [
+            {
+                "id": 1,
                 "name": "686XH-5D",
                 "type": "Oil/Gas",
                 "company": "California Resources Elk Hills",
@@ -75,7 +81,8 @@
                 "field": "Midway-Sunset",
                 "BOE": "30,0000"
             },
-            "well_2": {
+            {
+                "id": 2,
                 "name": "Holly Platform",
                 "type": "Oil",
                 "company": "Mobil",
@@ -83,7 +90,8 @@
                 "field": "South Ellwood",
                 "BOE": "228.3"
             },
-            "well_3":{
+            {
+                "id": 3,
                 "name": "Harvest Platform",
                 "type": "Oil/Gas",
                 "company": "Venoco",
@@ -91,14 +99,15 @@
                 "field": "Wilmington",
                 "BOE": "691"
             }
-        }
+        ]
     },
     {
         "index": 4,
         "region": "Alaska",
         "numListWell": 1,
-        "listWell": {
-            "well_1": {
+        "listWell": [
+            {
+                "id": 1,
                 "name": "Multiple wells",
                 "type": "Oil/Gas",
                 "company": "ConocoPhillips, ExxonMobil & Hilcorp",
@@ -106,14 +115,15 @@
                 "field": "Great Prudhoe Bay",
                 "BOE": "319,013"
             }
-        }
+        ]
     },
     {
         "index": 5,
         "region": "Midwest",
         "numListWell": 2,
-        "listWell": {
-            "well_1": {
+        "listWell": [
+            {
+                "id": 1,
                 "name": "Multiple wells",
                 "type": "Oil (Shale)",
                 "company": "ConocoPhilipps, ExxonMobil & Occidental Petroleum",
@@ -121,7 +131,8 @@
                 "field": "Bakken Formation",
                 "BOE": "458,000"
             },
-            "well_2": {
+            {
+                "id": 2,
                 "name": "Multiple wells",
                 "type": "Oil",
                 "company": "PDC Energy",
@@ -129,14 +140,15 @@
                 "field": "Wattenberg",
                 "BOE": "150,000"
             }
-        } 
+        ]
     },
     {
         "index": 6,
         "region": "East Coast",
         "numListWell": 1,
-        "listWell": {
-            "well_1": {
+        "listWell": [
+            {
+                "id": 1,
                 "name": "M REESE 1",
                 "type": "Gas",
                 "company": "JMM Resources, LLC",
@@ -144,6 +156,6 @@
                 "field": "Marcellus Shale",
                 "BOE": "Unknown"
             }
-        }
+        ]
     }
 ]
