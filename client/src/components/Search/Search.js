@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Form, Card, Accordion } from 'react-bootstrap';
 
 import './Search.css';
