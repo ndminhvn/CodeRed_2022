@@ -13,7 +13,11 @@
                 "company": "Henry Resources",
                 "location": "Midland County, TX",
                 "field": "Permian Basin",
-                "BOE": "1,249,892 Combined/6 months"
+                "BOE": "1,249,892 Combined/6 months",
+                "Coordinate": { 
+                    "lat":32, 
+                    "long":-101
+                }
             },
             {
                 "id": 2,
@@ -22,7 +26,11 @@
                 "company": "Concho Resources",
                 "location": "Andrews County, TX",
                 "field": "Permian Basin",
-                "BOE": "728,660/6 months"
+                "BOE": "728,660/6 months",
+                "Coordinate": { 
+                    "lat":32.34, 
+                    "long":-102.7
+                }
             },
             {
                 "id": 3,
@@ -31,7 +39,11 @@
                 "company": "EOG Resources",
                 "location": "Karnes County, TX",
                 "field": "Eagle Shale Ford",
-                "BOE": "610,225/6 months"
+                "BOE": "610,225/6 months",
+                "Coordinate": { 
+                    "lat":28.9, 
+                    "long":-97.8
+                }
             }
         ]   
     },
@@ -49,7 +61,11 @@
                 "company": "BP, BHP & Chevron Corporation",
                 "location": "Gulf of Mexico",
                 "field": "Mad Dog",
-                "BOE": "110,000"
+                "BOE": "110,000",
+                "Coordinate": { 
+                    "lat":27, 
+                    "long":-91
+                }
             },
             {
                 "id": 2,
@@ -58,7 +74,11 @@
                 "company": "Shell & BP",
                 "location": "Gulf of Mexico",
                 "field": "Mississippi Canyon",
-                "BOE": "230,333"
+                "BOE": "230,333",
+                "Coordinate": { 
+                    "lat":28.5, 
+                    "long":-89.75
+                }
             },
             {
                 "id": 3,
@@ -67,7 +87,11 @@
                 "company": "Chevron",
                 "location": "Gulf of Mexico",
                 "field": "Viosca Knoll",
-                "BOE": "76,000"
+                "BOE": "76,000",
+                "Coordinate": { 
+                    "lat":29.1, 
+                    "long":-87.9
+                }
             }
         ]
     },
@@ -85,7 +109,11 @@
                 "company": "California Resources Elk Hills",
                 "location": "Kern County, CA",
                 "field": "Midway-Sunset",
-                "BOE": "30,0000"
+                "BOE": "30,0000",
+                "Coordinate": { 
+                    "lat":35.5, 
+                    "long":-117
+                }
             },
             {
                 "id": 2,
@@ -94,7 +122,11 @@
                 "company": "Mobil",
                 "location": "Offshore California",
                 "field": "South Ellwood",
-                "BOE": "228.3"
+                "BOE": "228.3",
+                "Coordinate": { 
+                    "lat":34.4,
+                    "long":-120
+                }
             },
             {
                 "id": 3,
@@ -103,7 +135,11 @@
                 "company": "Venoco",
                 "location": "Point Conception, CA",
                 "field": "Wilmington",
-                "BOE": "691"
+                "BOE": "691",
+                "Coordinate": { 
+                    "lat":36, 
+                    "long":-120.68
+                }
             }
         ]
     },
@@ -121,7 +157,11 @@
                 "company": "ConocoPhillips, ExxonMobil & Hilcorp",
                 "location": "Northern Alaska",
                 "field": "Great Prudhoe Bay",
-                "BOE": "319,013"
+                "BOE": "319,013",
+                "Coordinate": { 
+                    "lat":70.3, 
+                    "long":-148
+                }
             }
         ]
     },
@@ -139,7 +179,11 @@
                 "company": "ConocoPhilipps, ExxonMobil & Occidental Petroleum",
                 "location": "North Dakota",
                 "field": "Bakken Formation",
-                "BOE": "458,000"
+                "BOE": "458,000",
+                "Coordinate": { 
+                    "lat":47.2, 
+                    "long":-102.7
+                }
             },
             {
                 "id": 2,
@@ -148,7 +192,11 @@
                 "company": "PDC Energy",
                 "location": "Weld County, CO",
                 "field": "Wattenberg",
-                "BOE": "150,000"
+                "BOE": "150,000",
+                "Coordinate": { 
+                    "lat":40.4, 
+                    "long":-105
+                }
             }
         ]
     },
@@ -166,7 +214,11 @@
                 "company": "JMM Resources, LLC",
                 "location": "Westmoreland County, PA",
                 "field": "Marcellus Shale",
-                "BOE": "Unknown"
+                "BOE": "Unknown",
+                "Coordinate": { 
+                    "lat":40, 
+                    "long":-79
+                }
             }
         ]
     }
