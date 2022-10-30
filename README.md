@@ -22,4 +22,5 @@ Create a solution that analyzes and/or displays oil and gas production in the Un
 - [react-globe.gl](https://github.com/vasturiano/react-globe.gl)
 
 # Project Demo
-Will update soon
+<img width="1512" alt="Screenshot 2022-10-30 at 12 54 26 PM" src="https://user-images.githubusercontent.com/72216741/198893693-13fdbaea-d824-4f9a-9177-bd12f9775b5b.png">
+
