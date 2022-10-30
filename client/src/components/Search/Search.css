@@ -18,3 +18,10 @@
 #search-btn {
     border-radius: 36px;
 }
+
+.result {
+    position: absolute;
+    z-index: 3;
+    margin-left: 60vw;
+    margin-top: 20vh;
+}
