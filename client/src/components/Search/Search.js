@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Button, Form, Row, Col, Card } from 'react-bootstrap';
+import React, { useState, useEffect, Fragment } from 'react';
+import { Button, Form, Card, Accordion } from 'react-bootstrap';
 
 import './Search.css';
 
@@ -82,19 +82,54 @@ const Search = () => {
         {resultDisplay ?
         <div className="result">
             <Card style={{ width: '30rem' }} >
-                <Card.Header>{value}</Card.Header>
+                <Card.Header><i>Oil/Gas Production Summary</i></Card.Header>
                 <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                    <Card.Title><b>{value}</b></Card.Title>
                     <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                        {regionData.map((regionalData, index) => {
+                            return (
+                                regionalData.region === value ? 
+                                `Total Production: ${regionalData.totalProd}` : null
+                            )
+                        })}
                     </Card.Text>
-                    <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>
+                    <Card.Text>
+                        {regionData.map((regionalData, index) => {
+                            return (
+                                regionalData.region === value ? 
+                                `Total Share of US Production: ${regionalData.sharePercent}` : null
+                            )
+                        })}
+                    </Card.Text>
+                </Card.Body>
+                <Card.Body>List of Wells:
+                    {regionData.map((regionalData, index) => {
+                        return (
+                            regionalData.region === value ? 
+                            <Accordion key={index}>
+                            {regionalData.listWell.map((well, id) => {
+                                return (
+                                    <Accordion.Item eventKey={id}>
+                                        <Accordion.Header>
+                                            Well: {well.name}
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Type: {well.type}</p>
+                                            <p>Company: {well.company}</p>
+                                            <p>Location: {well.location}</p>
+                                            <p>Field: {well.field}</p>
+                                            <p>BOE: {well.BOE}</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                )})
+                            }
+                            </Accordion> : null
+                        )
+                    })}
                 </Card.Body>
             </Card>
-        </div> : null}
+        </div> : null
+        }
         </>
     )
 }
