@@ -21,19 +21,19 @@ const Search = () => {
     const handleSearch = () => setLoading(true);
     return (
         <div id="search-container">
-            <div id="form-section">
-                <Form>
-                    <Form.Select aria-label="Default select example">
-                        <option>Search by Location</option>
-                        <option value="1">Alaska</option>
-                        <option value="2">Federal Offshore - Gulf of Mexico</option>
-                        <option value="3">Midwest</option>
-                        <option value="4">Northeast</option>
-                        <option value="5">Southeast</option>
-                        <option value="6">Texas</option>
-                        <option value="7">West Coast</option>
-                    </Form.Select>
-                </Form>
+            <div >
+                <Form.Select id="form-section" aria-label="Default select example">
+                    <option>Search by Location</option>
+                    <option value="1">Alaska</option>
+                    <option value="2">Federal Offshore - Gulf of Mexico</option>
+                    <option value="3">Midwest</option>
+                    <option value="4">Northeast</option>
+                    <option value="5">Southeast</option>
+                    <option value="6">Texas</option>
+                    <option value="7">West Coast</option>
+                </Form.Select>
+                {/* <Form>
+                </Form> */}
             </div>
             <div>
                 <Button id="search-btn"

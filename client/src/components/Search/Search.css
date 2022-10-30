@@ -9,13 +9,12 @@
 
 #search-container > div {
     padding: 5px;
-    border-radius: 12px;
 }
 
-/* #search-container > #form-section {
+#form-section {
     border-radius: 36px;
-} */
+}
 
 #search-btn {
-    border-radius: 12px;
+    border-radius: 36px;
 }
