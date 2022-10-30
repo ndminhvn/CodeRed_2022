@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Globe from 'react-globe.gl';
 import './Globe.css';
 
@@ -37,26 +37,57 @@ export default function World() {
 
   // Gen random data
   const N = 13;
-  let gData = [];
+  // const N = 2;
+  var gData = [];
   const latArr = [35,32.34,28.9,27,28.5,29.1,35.5,34.4,36,70.3,47.2,40.4,40];
   const lngArr = [-101,-102.7,-97.8,-91,-89.75,-87.9,-117,-120,-124,-148,-102.7,-106,-79];
-  // latArr.forEach(element => {
-  //   gData = [...Array(N).keys()].map(() => ({
+
+  // test
+  let list = [];
+  latArr.forEach((element, index) => {
+    list.push([element , lngArr[index]]);
+  });
+  console.log(list);
+
+  list.forEach(element => {
+    gData = [...Array(N)].map(() => ({
+      lat: element[0],
+      lng: element[1],
+      size: Math.random() / 5,
+      color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)]
+    }
+    ));
+  });
+
+  //sampleData
+  let pointTexas = { lat: 35, lng: -101, size: 0.25,  color: 'yellow'}
+  let pointAlaska = { lat: 76, lng: -148, size: 0.1,  color: 'blue'}
+
+  let sampleData = [pointTexas, pointAlaska];
+  // let size= Math.random() / 5;
+  // let color = ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)];
+  // console.log(gData);
+
+  // const latArr = [35,32.34];
+  // const lngArr = [-101,-102.7];
+  // latArr.forEach((element, index) => {
+  //   gData = [...Array(N)].map(() => ({
   //     lat: element,
-  //     lng: -101,
-  //     size: Math.random() / 3,
+  //     lng: lngArr[index],
+  //     size: Math.random() / 5,
   //     color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)]
-  //   }));
+  //   }
+  //   ));
+  //   // console.log(element, lngArr[index]);
   // });
 
-  for (let i = 0; i < N; i++) {
-    gData = [...Array(N).keys()].map(() => ({
-      lat: latArr[i],
-      lng: lngArr[i],
-      size: Math.random() / 3,
-      color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)]
-    }));
-  }
+  // gData = [...Array(N).keys()].map((element, index) => ({
+  //   lat: 35,
+  //   lng: -101,
+  //   size: Math.random() / 5,
+  //   color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)]
+  // }
+  // ));
 
   return (
     <div id="globe"
@@ -72,9 +103,11 @@ export default function World() {
         backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         // pathsData={ gData }
         width={w + shiftAmount}
-        pointsData={gData}
+        // pointsData={gData}
+        pointsData={sampleData}
         pointAltitude="size"
         pointColor="color"
+        showGraticules={true}
         // hexBinPointsData={popData}
         // hexBinPointWeight="pop"
         // hexAltitude={d => d.sumWeight * 6e-8}
