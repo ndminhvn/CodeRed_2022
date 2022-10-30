@@ -1,0 +1,21 @@
+#search-container {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    /* justify-content: end; */
+    margin-left: 65vw;
+    margin-top: 10vh;
+}
+
+#search-container > div {
+    padding: 5px;
+    border-radius: 12px;
+}
+
+/* #search-container > #form-section {
+    border-radius: 36px;
+} */
+
+#search-btn {
+    border-radius: 12px;
+}
